@@ -33,9 +33,9 @@ public final class Client {
         ClassPathXmlApplicationContext context
             = new ClassPathXmlApplicationContext(new String[] {"client-beans.xml"});
 
-        HelloWorld client = (HelloWorld)context.getBean("client");
+        HelloWorld client = (HelloWorld)context.getBean("helloClient");
 
-        String response = client.sayHi("Zuoban");
+        String response = client.sayHi("zuoban");
         System.out.println("Response: " + response);
         System.exit(0);
         // END SNIPPET: client
